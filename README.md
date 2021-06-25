@@ -54,9 +54,9 @@ void loop() {
   val = analogRead(sensor);  //analog data stored in val variable
   float mv = ( val/1024.0)*1000; //converted into mili volt
   float cel = mv/10; //1 cel temperature equal to 10mv 
-  float farh = (cel*9)/5 + 32; //convert celcius into fahrenheit
+  float farh = (cel*9)/5 + 32; //convert celsius into fahrenheit
   
-  //Print temperature in degree celcius on Serial monitor
+  //Print temperature in degree celsius on Serial monitor
   Serial.print("TEMPRATURE = ");
   Serial.print(cel);
   Serial.print("*C");
@@ -68,7 +68,7 @@ void loop() {
   Serial.print("*F");
   Serial.println();
   
-  //If temperature is grater than 25 celcius then turn on Led else turn off led
+  //If temperature is grater than 25 celsius then turn on Led else turn off led
   if(cel>25){
     digitalWrite(LED_BUILTIN,LOW);
   }
