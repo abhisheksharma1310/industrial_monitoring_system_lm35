@@ -3,6 +3,7 @@
 <p>Temperature is detected by LM35 sensor, and data is then updated in ThingSpeak cloud through ESP32.</p>
 
 <div>
+<p>  
 /*
  * Program for Industrial Monitoring System
  * It upload LM35 sensor data value in channels of ThingSpeak Cloud
@@ -64,6 +65,7 @@ void loop() {
   ThingSpeak.writeField(myChannelNumber, 2, farh, myWriteAPIKey);
   delay(5000);
 }
+</p>
 </div>
 
   <div>
