@@ -2,13 +2,11 @@
 <p>This is an automatic monitoring system which can be deployed to monitor sensor data in real-time.</p>
 <p>Temperature is detected by LM35 sensor, and data is then updated in ThingSpeak cloud through ESP32.</p>
 
+<p>Program for Industrial Monitoring System</p>>
 <div>
 <pre>  
 <code>  
-/*
- * Program for Industrial Monitoring System
- * It upload LM35 sensor data value in channels of ThingSpeak Cloud
- */
+
 #include<ESP8266WiFi.h>  //Include ESP8266 Library you can also use ESP32
 #include<ThingSpeak.h>  //Include ThingSpeak Library
 const char* ssid = ""; //Enter Your ssid of Hotspot
