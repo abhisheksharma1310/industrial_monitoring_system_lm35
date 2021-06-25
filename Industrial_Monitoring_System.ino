@@ -4,10 +4,10 @@
  */
 #include<ESP8266WiFi.h>  //Include ESP8266 Library you can also use ESP32
 #include<ThingSpeak.h>  //Include ThingSpeak Library
-const char* ssid = "Honor 9 Lite"; //Enter Your ssid of Hotspot
-const char* password = "abhishek11"; //Enter your Password
-long myChannelNumber = 1339904;      //ThingSpeak Channel Number  
-const char* myWriteAPIKey = "52B2KOE2ZG2C6EDC";  //ThingSpeak API Key  
+const char* ssid = ""; //Enter Your ssid of Hotspot
+const char* password = ""; //Enter your Password
+long myChannelNumber = ;      //ThingSpeak Channel Number  
+const char* myWriteAPIKey = "";  //ThingSpeak API Key  
 WiFiClient client; //make object client of class WiFiClient
 #define sensor A0  //Pin Connected to output of LM35 
 int val; //variable for storing sensor value
